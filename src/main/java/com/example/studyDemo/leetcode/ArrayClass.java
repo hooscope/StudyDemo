@@ -1,7 +1,5 @@
 package com.example.studyDemo.leetcode;
 
-import cn.hutool.core.util.StrUtil;
-
 public class ArrayClass {
 
     public static void main(String[] args) {
@@ -13,8 +11,11 @@ public class ArrayClass {
 //        int target = 2;
 //        System.out.println(removeElement(nums, target));
 
-        System.out.println(StrUtil.join(",",sortedSquares(new int[]{-4, -1, 0, 3, 10})));
+//        System.out.println(StrUtil.join(",", sortedSquares(new int[]{-4, -1, 0, 3, 10})));
 
+        int[] nums = new int[]{1, 2, 3, 4, 5};
+        int target = 11;
+        System.out.println(minSubArrayLen(target, nums));
     }
 
 
@@ -72,4 +73,36 @@ public class ArrayClass {
         return res;
     }
 
+    /**
+     * 209. 长度最小的子数组
+     */
+    private static int minSubArrayLen(int target, int[] nums) {
+
+        int res = Integer.MAX_VALUE;
+        int i = 0;
+
+        int sum = 0;
+        for (int j = 0; j < nums.length; j++) {
+
+            sum += nums[j];
+            while (sum >= target) {
+                res = Math.min(j - i + 1, res);
+                sum -= nums[i++];
+            }
+        }
+
+        return res == Integer.MAX_VALUE ? 0 : res;
+
+    }
+
+    /**
+     * 螺旋矩阵 II
+     */
+    private static int[][] generateMatrix(int n) {
+
+
+
+        return null;
+
+    }
 }
