@@ -1,5 +1,7 @@
 package com.example.studyDemo.leetcode;
 
+import cn.hutool.core.util.StrUtil;
+
 public class ArrayClass {
 
     public static void main(String[] args) {
@@ -7,13 +9,18 @@ public class ArrayClass {
 //        int target = 2;
 //        System.out.println(binarySearch(nums, target));
 
-        int[] nums = new int[]{2};
-        int target = 2;
-        System.out.println(removeElement(nums, target));
+//        int[] nums = new int[]{2};
+//        int target = 2;
+//        System.out.println(removeElement(nums, target));
+
+        System.out.println(StrUtil.join(",",sortedSquares(new int[]{-4, -1, 0, 3, 10})));
 
     }
 
 
+    /**
+     * 704. 二分查找
+     */
     private static int binarySearch(int[] nums, int target) {
 
         int left = 0, right = nums.length; //[left,right)
@@ -22,7 +29,7 @@ public class ArrayClass {
             if (nums[index] > target) {
                 right = index;
             } else if (nums[index] < target) {
-                left = index+1;
+                left = index + 1;
             } else {
                 return index;
             }
@@ -30,26 +37,39 @@ public class ArrayClass {
         return -1;
     }
 
+    /**
+     * 27. 移除元素
+     */
     private static int removeElement(int[] nums, int target) {
 
         int slowIndex = 0;
-        for (int fastIndex = 0;fastIndex < nums.length;fastIndex++){
-            if (nums[fastIndex] != target){
-                nums[slowIndex]=nums[fastIndex];
+        for (int fastIndex = 0; fastIndex < nums.length; fastIndex++) {
+            if (nums[fastIndex] != target) {
+                nums[slowIndex] = nums[fastIndex];
                 slowIndex++;
             }
-            printNums(nums);
         }
         return slowIndex;
     }
 
-    private static void printNums(int[] nums){
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        for (int i:nums){
-            sb.append(i).append(", ");
+    /**
+     * 977. 有序数组的平方
+     */
+    private static int[] sortedSquares(int[] nums) {
+
+        int i = 0, j = nums.length - 1;
+        int k = nums.length - 1;
+        int[] res = new int[nums.length];
+        while (i <= j) {
+            if (nums[i] * nums[i] < nums[j] * nums[j]) {
+                res[k--] = nums[j] * nums[j];
+                j--;
+            } else {
+                res[k--] = nums[i] * nums[i];
+                i++;
+            }
         }
-        sb.append("]");
-        System.out.println(sb.toString());
+        return res;
     }
+
 }
