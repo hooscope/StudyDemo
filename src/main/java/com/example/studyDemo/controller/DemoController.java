@@ -44,6 +44,7 @@ public class DemoController {
         logger.info("=====>测试日志info级别打印<=====");
         logger.error("=====>测试日志error级别打印<====");
         logger.warn("=====>测试日志warn级别打印<=====");
+        logger.warn("=====>test git merge<=====");
         List<TDeviceInfo> infos = demoService.test();
         return ResultGenerator.genSuccessResult(infos);
     }
