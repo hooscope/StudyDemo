@@ -6,6 +6,7 @@ package com.example.studyDemo.entity;
  */
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -49,6 +50,7 @@ public class TDeviceInfo implements Serializable {
     /**
      * 设备创建时间
      */
+    @JsonFormat(pattern = "YYYY-MM-DD hh:mm:ss")
     private Date createDate;
 
 }

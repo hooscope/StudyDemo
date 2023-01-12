@@ -6,6 +6,7 @@ import com.example.studyDemo.entity.TDeviceInfo;
 import com.example.studyDemo.mapper.TDeviceInfoMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,7 +18,9 @@ public class DemoService {
 
     TDeviceInfoMapper tDeviceInfoMapper;
 
-    public List<TDeviceInfo> test(){
+    RedisTemplate<String,String> redisTemplate;
+
+    public List<TDeviceInfo> testMysql(){
         LambdaQueryWrapper<TDeviceInfo> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(TDeviceInfo::getId,1);
         List<TDeviceInfo> tDeviceInfos = tDeviceInfoMapper.selectList(wrapper);
@@ -27,6 +30,14 @@ public class DemoService {
         log.warn("test warn {}",tDeviceInfos.size());
         log.error("test error {}",tDeviceInfos.size());
         return tDeviceInfos;
+
+    }
+
+    public String testRedis(String name){
+        log.info("redis set name:{}",name);
+        redisTemplate.opsForValue().set("name",name);
+
+        return redisTemplate.opsForValue().get("name");
 
     }
 

@@ -6,6 +6,11 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.79.128
+    port: 6379
+    timeout: 5000
+    database: 0
 
 logging:
   config: classpath:logback.xml

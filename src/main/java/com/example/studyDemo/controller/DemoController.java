@@ -11,10 +11,7 @@ import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,22 +29,30 @@ public class DemoController {
     public List<TDeviceInfo> test() {
 
 
-        List<TDeviceInfo> infos = demoService.test();
+        List<TDeviceInfo> infos = demoService.testMysql();
         return infos;
     }
 
-    @ApiOperation(value = "测试接口")
+    @ApiOperation(value = "测试mysql")
     @ApiResponses(@ApiResponse(code = 200, message = "处理成功"))
-    @RequestMapping(value = "testget", method = RequestMethod.GET)
-    public Result<List<TDeviceInfo>> testGetRequest(){
+    @RequestMapping(value = "testMysql", method = RequestMethod.GET)
+    public Result<List<TDeviceInfo>> testMysql(){
         logger.debug("=====>测试日志debug级别打印<==test git merge==");
         logger.info("=====>测试日志info级别打印<=====");
         logger.error("=====>测试日志error级别打印<====");
         logger.warn("=====>测试日志warn级别打印<=====");
         logger.warn("=====>test git merge<=====");
-        List<TDeviceInfo> infos = demoService.test();
+        List<TDeviceInfo> infos = demoService.testMysql();
         return ResultGenerator.genSuccessResult(infos);
     }
+
+    @ApiOperation(value = "测试redis")
+    @ApiResponses(@ApiResponse(code = 200, message = "处理成功"))
+    @RequestMapping(value = "testRedis", method = RequestMethod.GET)
+    public Result<String> testRedis(@RequestParam(value = "name") String name){
+        return ResultGenerator.genSuccessResult(demoService.testRedis(name));
+    }
+
     @RequestMapping(value = "testpost", method = RequestMethod.POST)
     public String testPostRequest(){
         return "456";
