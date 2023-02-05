@@ -2,6 +2,7 @@ package com.example.studyDemo.service;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.example.studyDemo.cases.DeadLockDemo;
 import com.example.studyDemo.entity.TDeviceInfo;
 import com.example.studyDemo.mapper.TDeviceInfoMapper;
 import lombok.AllArgsConstructor;
@@ -17,6 +18,8 @@ public class DemoService {
 
     TDeviceInfoMapper tDeviceInfoMapper;
 
+    DeadLockDemo deadLockDemo;
+
     public List<TDeviceInfo> test(){
         LambdaQueryWrapper<TDeviceInfo> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(TDeviceInfo::getId,1);
@@ -28,6 +31,10 @@ public class DemoService {
         log.error("test error {}",tDeviceInfos.size());
         return tDeviceInfos;
 
+    }
+
+    public void testDeadLock(){
+        deadLockDemo.testDeadLock();
     }
 
 }

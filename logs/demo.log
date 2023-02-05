@@ -1,209 +1,23 @@
-2023-01-09 23:16:36,566 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 21372 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:16:36,568 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:16:36,601 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:16:37,371 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:16:37,376 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:16:37,377 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:16:37,377 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:16:37,431 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:16:37,431 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 835 ms
-2023-01-09 23:16:37,975 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:16:38,032 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration 105 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2023-01-09 23:16:38,075 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:16:38,089 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:16:38,196 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.851 seconds (JVM running for 2.345)
-2023-01-09 23:16:43,326 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-09 23:16:43,327 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2023-01-09 23:16:43,330 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 3 ms
-2023-01-09 23:16:43,343 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:16:43,345 [http-nio-8088-exec-2] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:16:43,345 [http-nio-8088-exec-2] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:16:43,345 [http-nio-8088-exec-2] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:16:43,381 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
-2023-01-09 23:16:43,691 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
-2023-01-09 23:16:43,715 [http-nio-8088-exec-2] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:16:43,715 [http-nio-8088-exec-2] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:16:43,715 [http-nio-8088-exec-2] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:16:43,715 [http-nio-8088-exec-2] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:16:43,716 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:16:43,716 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:20:58,699 [http-nio-8088-exec-5] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:20:58,700 [http-nio-8088-exec-5] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:20:58,700 [http-nio-8088-exec-5] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:20:58,700 [http-nio-8088-exec-5] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:20:58,703 [http-nio-8088-exec-5] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:20:58,703 [http-nio-8088-exec-5] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:20:58,703 [http-nio-8088-exec-5] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:20:58,703 [http-nio-8088-exec-5] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:20:58,703 [http-nio-8088-exec-5] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:20:58,704 [http-nio-8088-exec-5] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:22:02,907 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:22:02,909 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
-2023-01-09 23:22:02,914 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
-2023-01-09 23:22:05,754 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 8816 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:22:05,756 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:22:05,788 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:22:06,566 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:22:06,572 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:22:06,572 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:22:06,572 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:22:06,627 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:22:06,627 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 843 ms
-2023-01-09 23:22:07,173 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:22:07,231 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration 105 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2023-01-09 23:22:07,273 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:22:07,286 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:22:07,390 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.864 seconds (JVM running for 2.376)
-2023-01-09 23:24:53,897 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:24:59,082 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 19580 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:24:59,084 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:24:59,118 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:24:59,876 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:24:59,882 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:24:59,882 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:24:59,882 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:24:59,935 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:24:59,935 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 824 ms
-2023-01-09 23:25:00,483 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:25:00,567 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:25:00,580 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:25:00,679 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.825 seconds (JVM running for 2.321)
-2023-01-09 23:26:18,555 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-09 23:26:18,555 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2023-01-09 23:26:18,559 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 4 ms
-2023-01-09 23:26:18,579 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:26:18,582 [http-nio-8088-exec-2] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:26:18,582 [http-nio-8088-exec-2] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:26:18,582 [http-nio-8088-exec-2] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:26:18,620 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
-2023-01-09 23:26:18,930 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
-2023-01-09 23:26:18,956 [http-nio-8088-exec-2] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:26:18,956 [http-nio-8088-exec-2] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:26:18,956 [http-nio-8088-exec-2] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:26:18,956 [http-nio-8088-exec-2] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:26:18,957 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:26:18,957 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:30:16,759 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:30:16,761 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
-2023-01-09 23:30:16,767 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
-2023-01-09 23:30:18,760 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 21624 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:30:18,762 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:30:18,797 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:30:19,555 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:30:19,560 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:30:19,561 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:30:19,561 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:30:19,616 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:30:19,616 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 826 ms
-2023-01-09 23:30:20,158 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:30:20,241 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:30:20,253 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:30:20,351 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.816 seconds (JVM running for 2.317)
-2023-01-09 23:31:46,735 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-09 23:31:46,735 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2023-01-09 23:31:46,739 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 4 ms
-2023-01-09 23:31:46,751 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:31:46,754 [http-nio-8088-exec-2] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:31:46,754 [http-nio-8088-exec-2] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:31:46,754 [http-nio-8088-exec-2] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:31:46,791 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
-2023-01-09 23:31:47,093 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
-2023-01-09 23:31:47,120 [http-nio-8088-exec-2] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:31:47,120 [http-nio-8088-exec-2] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:31:47,120 [http-nio-8088-exec-2] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:31:47,120 [http-nio-8088-exec-2] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:31:47,121 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:31:47,121 [http-nio-8088-exec-2] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:34:07,726 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:34:07,727 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
-2023-01-09 23:34:07,733 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
-2023-01-09 23:34:09,716 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 22328 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:34:09,718 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:34:09,754 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:34:10,502 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:34:10,508 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:34:10,508 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:34:10,508 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:34:10,562 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:34:10,563 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 815 ms
-2023-01-09 23:34:11,104 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:34:11,186 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:34:11,199 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:34:11,297 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.806 seconds (JVM running for 2.303)
-2023-01-09 23:35:01,686 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:35:03,701 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 16592 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:35:03,703 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:35:03,736 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:35:04,477 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:35:04,482 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:35:04,482 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:35:04,482 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:35:04,535 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:35:04,536 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 806 ms
-2023-01-09 23:35:05,071 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:35:05,154 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:35:05,166 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:35:05,264 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.786 seconds (JVM running for 2.278)
-2023-01-09 23:35:14,370 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-09 23:35:14,370 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2023-01-09 23:35:14,374 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 4 ms
-2023-01-09 23:35:14,395 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:35:14,398 [http-nio-8088-exec-1] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:35:14,398 [http-nio-8088-exec-1] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:35:14,398 [http-nio-8088-exec-1] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:35:14,436 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
-2023-01-09 23:35:14,735 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
-2023-01-09 23:35:14,761 [http-nio-8088-exec-1] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:35:14,761 [http-nio-8088-exec-1] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:35:14,762 [http-nio-8088-exec-1] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:35:14,762 [http-nio-8088-exec-1] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:35:14,762 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:35:14,762 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:44:00,770 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:44:00,771 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
-2023-01-09 23:44:00,777 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
-2023-01-09 23:44:03,558 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 21368 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:44:03,560 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:44:03,598 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:44:04,348 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:44:04,353 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:44:04,354 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:44:04,354 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:44:04,409 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:44:04,409 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 820 ms
-2023-01-09 23:44:04,948 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:44:05,031 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:44:05,043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:44:05,144 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.803 seconds (JVM running for 2.291)
-2023-01-09 23:46:20,047 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:46:24,144 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 22108 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
-2023-01-09 23:46:24,146 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
-2023-01-09 23:46:24,184 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2023-01-09 23:46:24,932 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
-2023-01-09 23:46:24,937 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:46:24,937 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
-2023-01-09 23:46:24,938 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-01-09 23:46:24,992 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
-2023-01-09 23:46:24,993 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 816 ms
-2023-01-09 23:46:25,535 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:46:25,618 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
-2023-01-09 23:46:25,631 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
-2023-01-09 23:46:25,730 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 1.813 seconds (JVM running for 2.302)
-2023-01-09 23:46:37,601 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-09 23:46:37,601 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
-2023-01-09 23:46:37,605 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 4 ms
-2023-01-09 23:46:37,626 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 35 - Before
-2023-01-09 23:46:37,629 [http-nio-8088-exec-1] INFO  c.e.s.controller.DemoController 44 - =====>测试日志info级别打印<=====
-2023-01-09 23:46:37,629 [http-nio-8088-exec-1] ERROR c.e.s.controller.DemoController 45 - =====>测试日志error级别打印<====
-2023-01-09 23:46:37,629 [http-nio-8088-exec-1] WARN  c.e.s.controller.DemoController 46 - =====>测试日志warn级别打印<=====
-2023-01-09 23:46:37,666 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
-2023-01-09 23:46:37,965 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
-2023-01-09 23:46:37,992 [http-nio-8088-exec-1] INFO  c.e.studyDemo.service.DemoService 24 - test info 1
-2023-01-09 23:46:37,992 [http-nio-8088-exec-1] DEBUG c.e.studyDemo.service.DemoService 25 - test debug 1
-2023-01-09 23:46:37,993 [http-nio-8088-exec-1] WARN  c.e.studyDemo.service.DemoService 27 - test warn 1
-2023-01-09 23:46:37,993 [http-nio-8088-exec-1] ERROR c.e.studyDemo.service.DemoService 28 - test error 1
-2023-01-09 23:46:37,994 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
-2023-01-09 23:46:37,994 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 64 - Around
-2023-01-09 23:46:55,054 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-01-09 23:46:55,056 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
-2023-01-09 23:46:55,062 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2023-02-02 14:39:14,598 [main] INFO  c.example.studyDemo.DemoApplication 55 - Starting DemoApplication on DESKTOP-RGV3FBC with PID 1492 (D:\hooscope\Java_WorkSpace\StudyDemo\target\classes started by hooscope in D:\hooscope\Java_WorkSpace\StudyDemo)
+2023-02-02 14:39:14,601 [main] INFO  c.example.studyDemo.DemoApplication 651 - No active profile set, falling back to default profiles: default
+2023-02-02 14:39:14,638 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder 127 - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-02-02 14:39:15,506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8088 (http)
+2023-02-02 14:39:15,513 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8088"]
+2023-02-02 14:39:15,513 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2023-02-02 14:39:15,513 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-02-02 14:39:15,579 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2023-02-02 14:39:15,579 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 948 ms
+2023-02-02 14:39:16,188 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-02 14:39:16,286 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8088"]
+2023-02-02 14:39:16,300 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-02 14:39:16,415 [main] INFO  c.example.studyDemo.DemoApplication 61 - Started DemoApplication in 2.062 seconds (JVM running for 2.949)
+2023-02-02 14:39:26,386 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:39:26,387 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:39:26,391 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 4 ms
+2023-02-02 14:39:26,407 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 35 - Before
+2023-02-02 14:39:26,410 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
+2023-02-02 14:39:26,410 [http-nio-8088-exec-1] INFO  c.example.studyDemo.config.AopConfig 64 - Around
+2023-02-02 14:40:10,451 [http-nio-8088-exec-3] INFO  c.example.studyDemo.config.AopConfig 35 - Before
+2023-02-02 14:40:10,452 [http-nio-8088-exec-3] INFO  c.example.studyDemo.config.AopConfig 46 - AfterReturning
+2023-02-02 14:40:10,452 [http-nio-8088-exec-3] INFO  c.example.studyDemo.config.AopConfig 64 - Around
+2023-02-02 15:20:59,732 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'

@@ -10,6 +10,7 @@ public class StringClass {
         String s = "abcdefg";
         int k = 2;
         System.out.println(reverseStr(s, k));
+        System.out.println(System.getProperty("java.io.tmpdir"));
     }
 
     /**

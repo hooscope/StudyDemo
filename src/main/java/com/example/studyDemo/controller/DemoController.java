@@ -1,5 +1,6 @@
 package com.example.studyDemo.controller;
 
+import com.example.studyDemo.cases.DemoPublisher;
 import com.example.studyDemo.entity.TDeviceInfo;
 import com.example.studyDemo.result.Result;
 import com.example.studyDemo.result.ResultGenerator;
@@ -26,6 +27,9 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
+    @Autowired
+    DemoPublisher demoPublisher;
+
     private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
 
     @GetMapping("/test")
@@ -34,6 +38,12 @@ public class DemoController {
 
         List<TDeviceInfo> infos = demoService.test();
         return infos;
+    }
+
+    @GetMapping("/testEventListener")
+    public void testEventListener() {
+
+        demoPublisher.publish("发布消息");
     }
 
     @ApiOperation(value = "测试接口")
@@ -50,5 +60,10 @@ public class DemoController {
     @RequestMapping(value = "testpost", method = RequestMethod.POST)
     public String testPostRequest(){
         return "456";
+    }
+
+    @RequestMapping(value = "testDeadLock", method = RequestMethod.GET)
+    public void testDeadLock(){
+        demoService.testDeadLock();
     }
 }
